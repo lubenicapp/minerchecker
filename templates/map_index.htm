@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stop Seum</title>
+    <link rel="icon" href="{{url_for('static', filename='favicon.ico')}}">
+    <!-- Fichier de style et d'automatisation -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='map_style.css')}}">
+    <script src="{{url_for('map_js')}}"></script>
+    <script src="{{url_for('map_form_js')}}"></script>
+    <script src="{{url_for('map_collections_js')}}"></script>
+    <script src="{{url_for('map_script_js')}}"></script>
+
+
+    <!--  Police utilisÃ©e par le jeu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="fixed-bloc">
+    <form action = "/" method = "post" id="form">
+        <div class="container">
+            <p>To check if your ship is well positioned</p>
+            <p>Enter ship data and solar system</p>
+
+            <p><input type="text" name="name" placeholder="Ship name (Jumper)" id="ship_name" class="blocIpt champs" spellcheck="false" autocomplete="off"></p>
+            <p><input type="text" name="id" placeholder="Ship id (336)" id="ship_id" class="blocIpt champs" spellcheck="false" autocomplete="off"></p>
+            <p>
+                <span>Solar system : </span>
+                <br>
+                <label class='radio' id="sol1" data-id="1">
+                    <input type="radio" name="sol" value="1" checked="checked">
+                    <span class="check">1</span>
+                </label>
+                <label class='radio' id="sol2" data-id="2">
+                    <input type="radio" name="sol" value="2">
+                    <span class="check">2</span>
+                </label>
+                <label class='radio' id="sol3" data-id="3">
+                    <input type="radio" name="sol" value="3">
+                    <span class="check">3</span>
+                </label>
+                <label class='radio' id="sol4" data-id="4">
+                    <input type="radio" name="sol" value="4">
+                    <span class="check">4</span>
+                </label>
+            </p>
+        </div>
+        <div class="container">
+
+            <p><input type="submit" value="submit" class="blocIpt on" id="submit" /></p>
+
+            <div id="message">
+                <p class="hide">No message</p>
+                <div id="loading">
+                    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                </div>
+            </div>
+
+            <p>Lubenica#3872 for any feedback</p>
+        </div>
+
+    </form>
+
+    <div id="map" style="margin-top : 30px">
+        <div id="map-header">
+            <div id="recentrer">Center</div>
+            <div id="focus-ship">Ship</div>
+            <div id="zoom">100%</div>
+        </div>
+        <canvas id="main-canvas"></canvas>
+    </div>
+
+</div>
+
+<div id="scroll-box">
+    <div id="list">
+        <div id="list-container"></div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+{
+  "collections": [
+    {
+      "name":"Human",
+      "ships": [
+        "jumper",
+        "explorer",
+        "prospector",
+        "pioneer",
+        "space digger"
+      ]
+    },
+    {
+      "name":"Al'ong",
+      "ships": [
+        "drone",
+        "dragonfly",
+        "pathfinder",
+        "vanguard",
+        "handshaker",
+        "senator"
+      ]
+    },
+    {
+      "name":"Titan",
+      "ships": [
+        "sunriser"
+      ]
+    },
+    {
+      "name":"Rez",
+      "ships": [
+        "nomad",
+        "netrunner",
+        "highrider",
+        "apogee"
+      ]
+    },
+    {
+      "name":"Treasurer",
+      "ships": [
+        "auditor",
+        "comptroller",
+        "enforcer",
+        "chancellor"
+      ]
+    },
+    {
+      "name":"Asterion",
+      "ships": [
+        "petrack",
+        "gemini",
+        "gorgo"
+      ]
+    },
+    {
+      "name":"Gotchi",
+      "ships": [
+        "fren",
+        "monocle",
+        "curve",
+        "ghost"
+      ]
+    },
+    {
+      "name":"Tianzi",
+      "ships": [
+        "journey",
+        "demons",
+        "spirits",
+        "kingdoms"
+      ]
+    },
+    {
+      "name":"Cucurbitaceae",
+      "ships": [
+        "pickle",
+        "slice",
+        "sandwich",
+        "mason jar"
+      ]
+    },
+    {
+      "name":"Meles",
+      "ships": [
+        "anakuma",
+        "mellivora",
+        "leucurus",
+        "capensis"
+      ]
+    },
+    {
+      "name":"Wizards",
+      "ships": [
+        "croissant",
+        "friendmaker",
+        "space crab",
+        "liberator"
+      ]
+    },
+    {
+      "name":"Kleroterion",
+      "ships": [
+        "arbitrator",
+        "pinakion",
+        "justitia",
+        "truthstar"
+      ]
+    },
+    {
+      "name":"Lunarella",
+      "ships": [
+        "konpeito",
+        "ramune",
+        "anpan",
+        "higashi"
+      ]
+    },
+    {
+      "name":"Apy",
+      "ships": [
+        "detos",
+        "foresight",
+        "annuare",
+        "mot"
+      ]
+    },
+    {
+      "name":"Herd",
+      "ships": [
+        "apex",
+        "doggo",
+        "graff",
+        "mastodon"
+      ]
+    },
+    {
+      "name": "EthCC",
+      "ships": [
+        "le france"
+      ]
+    },
+        {
+      "name": "Yammerians",
+      "ships": [
+        "alata",
+        "trifida",
+        "rotunda"
+      ]
+    }
+  ]
+}
+
