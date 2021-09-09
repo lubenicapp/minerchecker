@@ -51,13 +51,4 @@ def compute_position_at(xyt, ts):
     return (int(x_2), int(y_2), ts)
 
 
-if __name__ == "__main__":
-    ts = int(time.time())
-    delay = 0
-    id = getId("auditor", 95)
-    miner = get_miner(id, 1)
-    print(miner.owner)
-
-
-
 
