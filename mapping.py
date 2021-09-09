@@ -77,11 +77,3 @@ def get_all_miners_in_sol_as_xyt(sol):
         miner = all_miners[i]
         xyts.append([miner.x, miner.y, miner.last_update])
     return json.dumps(xyts)
-
-if __name__ == "__main__":
-    result = (get_all_miners_in_sol(100))
-    print (len(result), " ships :")
-    result.sort(key=lambda x: x.id)
-    for miner in result:
-        print (id_to_str(miner.id), miner.owner)
-    pass
