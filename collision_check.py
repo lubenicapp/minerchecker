@@ -32,9 +32,10 @@ def xyt_for_all_comets(sol):
             min = entry
     return all_xyt_for_all_cmt[result]
 
+
 def get_xyt_when_comet_is_in_range(comet, sol):
     now = time.time()
-    min = 200000
+    min = math.inf
     new_tr = int(time_range * time_range_by_sol[sol])
     for i in range(new_tr):
         comet_position = comet.current_cartesian_position(now + i)
@@ -49,8 +50,9 @@ def get_xyt_when_comet_is_in_range(comet, sol):
         all_xyt.append([comet_position[0], comet_position[1], int(ts)])
     return all_xyt
 
+
 def get_collision_miner_comet_timestamp(miner, comet, sol):
-    min = 200000
+    min = math.inf
     min_i = 0
     start = int(time.time())
     miner_pos = get_miner_position_at(miner.id, start + min_i, sol)
@@ -90,12 +92,3 @@ def check_for_ship_in_sol(ship_name, ship_nb, solar_system):
         return ship_name + " : " + str
     except:
         return "something went wrong"
-
-if __name__ == "__main__":
-#     print(xyt_for_all_comets(2))
-    ship_name = input("ship name : ")
-    ship_nb = int(input("ship number : "))
-    solar_system = int(input("solar system [1 2 3] : ")) - 1
-    miner_id = getId(ship_name, ship_nb)
-    miner = (get_miner(miner_id, solar_system))
-    print(check_collisions_miner_sol(miner, solar_system))
