@@ -1,6 +1,6 @@
 # minerchecker
 
-Gams cometh.io is "down" since october 21 !
+Games cometh.io is "down" since october 21 !
 game is transitionning into version 2. So this app is useless now.
 check this [post](https://medium.com/cometh/cometh-beyond-%EF%B8%8F-the-passive-reward-transition-%EF%B8%8F-129ae2ebab89)
 
